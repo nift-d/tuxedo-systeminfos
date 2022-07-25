@@ -79,7 +79,7 @@ elif [ "$(. /etc/os-release; echo $NAME)" = "KDE neon" ]; then
 elif [ "$(. /etc/os-release; echo $NAME)" = "openSUSE Leap" ]; then
     zypper in -y curl zip nvme-cli > /dev/null 2>&1
 elif [ "$(. /etc/os-release; echo $NAME)" = "Manjaro Linux" ]; then
-    pacman -Sy --no-confirm curl zip nvme-cli > /dev/null 2>&1
+    pacman -Sy --noconfirm curl zip nvme-cli > /dev/null 2>&1
 else
     printf "Nicht unterstütze Distribution! Überspringe... / Unsupported Distribution! Skipping... \n"
 fi
